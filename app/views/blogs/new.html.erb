@@ -1,0 +1,12 @@
+<div class="contents row">
+  <%= form_for @blogs,url: blogs_path do |f| %>
+          <div style="margin: 8px 0">
+            <li class="black-text text-darken-2"><%= f.text_area :text, style: 'width: 100%;height: 300px;' %></li>
+          </div>
+          <div class="row">
+            <div class="col10 push1">
+              <li class="black-text text-darken-2"><%= f.submit %></li>
+            </div>
+          </div>
+  <% end %>
+</div>
